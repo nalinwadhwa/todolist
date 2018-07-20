@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ToDo List</title>
+		<h1>ToDo List</h1>
+	</head>
+	<body>
+	<h3>tasks:</h3>
+	<p id="opt">
+	</p>
+	<br>
+	<button type="button" onclick="add()">add task</button>
+<button type="button" onclick="reset()">reset</button>
+	<script>
+	    function add(){
+    var task =prompt("enter task :");
+document.getElementById("opt").innerHTML+="<input type='checkbox' >"+task+"<br>";
+}
+
+function reset(){
+    document.getElementById("opt").innerHTML="";
+alert("all tasks cleared!");
+}
+	</script>
+	</body>
+</html>
